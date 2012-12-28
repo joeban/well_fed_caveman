@@ -1,0 +1,16 @@
+defaults: &defaults
+  adapter: postgresql
+  username: wfc
+  host: localhost
+
+production:
+  database: wfc_production
+  <<: *defaults
+
+development:
+  database: wfc_development
+  <<: *defaults
+
+test:
+  database: wfc_test
+  <<: *defaults
